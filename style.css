@@ -1,0 +1,240 @@
+/* Reset default margin, padding, and box-sizing */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Righteous&family=Roboto:wght@900&family=Unlock&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: a;
+  src: url(./font/LargestGenomeDemoRegular-BW4eG.otf);
+}
+@font-face {
+  font-family: b;
+  src: url(./font/CoppintMediumDemo-gxdl1.ttf);
+}
+body {
+  
+  background-image: url('./img/1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 10px;
+  width: 100vw;
+  
+}
+
+
+.logo {
+  font-size: 20px; /* Change the font size to your preference */
+  color: #0f1d24b7; /* Change the text color to your preference */
+  display: flex;
+  align-items: center; /* Vertically align the text and icon */
+  font-family: a;
+}
+
+/* Optional: Add margin or padding to separate the icon from the text */
+.logo img {
+  padding-bottom: 3px;
+  margin-left: 5px; /* Adjust the margin as needed */
+  width: 50px; /* Adjust the width of the icon to your preference */
+  height: 40px; /* Adjust the height of the icon to your preference */
+  /* If you want to keep the original size of the image, remove width and height properties */
+}
+
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 80px;
+  font-size: 19px;
+}
+
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column; /* Add this line to stack containers vertically */
+  padding-left: 1080px;
+  padding-top: 100px;
+  color: #ffffff;
+  font-family: b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the left */
+  padding: 20px;
+  width: 540px;
+  height: 350px;
+  text-align: left;
+  margin: 0; /* Remove any margin */
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  font-family: b;
+}
+
+h6 {
+  padding-top: 23px;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: left;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.content-btn {
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 10px 80px;
+  background-color: #ffc571;
+  color: #000000;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: b;
+  border-radius: 5px;
+}
+.content-btnn{
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 10px 80px;
+  background-color: #372c1b14;
+  color: #ffc571;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #ffc571;
+  font-family: b;
+  border-radius: 5px;
+}
+
+.nav-btn {
+  margin-right: 25px;
+  padding: 10px 30px;
+  background-color: #322118;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: b;
+  
+}
+
+/* Additional CSS rules for the new container */
+.sub-container {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  width: 547px;
+  height: 133px;
+  text-align: left;
+  border-radius: 10px;
+  border: 1px solid #ffc571;
+}
+
+.text-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; /* Change to column */
+  flex: 1; /* Allow each .text-cont to grow and take equal space */
+}
+
+.text-cont .first-p,
+.text-cont .second-p {
+  margin: 0; /* Remove the default margin from the p tags */
+}
+
+.text-cont > h1 {
+  font-size: 2.5vw;
+}
+
+.text-cont > .h1-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-cont > .h1-container > h1 {
+  margin: 0; /* Remove the default margin from the h1 tag */
+}
+
+.text-cont > .first-p {
+  margin-bottom: 5px; /* Add some spacing between the first p tag and the h1 tag */
+}
+
+.text-cont > .second-p {
+  margin-top: 5px; /* Add some spacing between the h1 tag and the second p tag */
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust header styles for smaller screens */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+
+  .container, .sub-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Add a media query for even smaller screens, e.g., smartphones */
+@media screen and (max-width: 480px) {
+  .content-btn, .nav-btn {
+    padding: 10px 40px;
+  }
+  
+  .text-cont > h1 {
+    font-size: 4.5vw;
+  }
+}
