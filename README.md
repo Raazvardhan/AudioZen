@@ -1,5 +1,5 @@
 # AudioZen - Headphones Front End Project
-![image](https://github.com/Raazvardhan/AudioZen/assets/139915269/6d1e402a-93cf-444b-9abd-877ead665afb)
+![image](https://github.com/smthari/Frontend-Projects/assets/139915269/326d8922-7daf-4156-9ca7-ab7e1a1b20cb)
 
 ## Overview
 Welcome to AudioZen, a front-end project designed to provide a delightful experience for browsing and purchasing headphones online. Whether you're a music enthusiast, a gamer, or simply in need of a new pair of headphones, AudioZen offers an intuitive interface to explore and select from a diverse range of options.
